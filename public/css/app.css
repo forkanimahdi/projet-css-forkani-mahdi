@@ -10765,7 +10765,7 @@ header .first-nav-part li a:hover {
 }
 header .logo a img {
   width: 4vw;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 }
 header .second-nav-part {
   width: 35%;
@@ -10799,9 +10799,12 @@ header .second-nav-part li a:hover {
   }
   header .logo {
     position: absolute;
-    top: 2%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%);
+  }
+  header .logo a img {
+    width: 3.5vw;
   }
   header .first-nav-part {
     width: 50%;
@@ -10842,7 +10845,7 @@ header .second-nav-part li a:hover {
     left: 0;
   }
   header #mobileMenu:checked + .fa-bars + .first-nav-part + .logo + .second-nav-part {
-    left: 0;
+    right: 0;
   }
   header .fa-bars {
     color: white;
@@ -10862,14 +10865,14 @@ header .second-nav-part li a:hover {
   }
   header .first-nav-part {
     width: 100%;
-    height: 35vh;
+    height: 44vh;
     position: fixed;
-    top: 10vh;
-    left: -100vw;
+    top: 11vh;
+    left: -200vw;
     border-top: 1px solid white;
     border-bottom: none;
     flex-direction: column;
-    background-color: rgba(66, 59, 59, 0.5882352941);
+    background-color: #423b3b;
     transition: 1s;
   }
   header .first-nav-part li {
@@ -10881,14 +10884,14 @@ header .second-nav-part li a:hover {
   }
   header .second-nav-part {
     width: 100%;
-    height: 35vh;
+    height: 44vh;
     position: fixed;
-    top: 44vh;
-    left: -100vw;
+    top: 55vh;
+    right: -200vw;
     border-top: none;
     border-bottom: 1px solid white;
     flex-direction: column;
-    background-color: rgba(66, 59, 59, 0.5882352941);
+    background-color: #423b3b;
     transition: 1s;
   }
   header .second-nav-part li {
@@ -10932,6 +10935,15 @@ header .second-nav-part li a:hover {
   font-size: 5vw;
   text-transform: uppercase;
   color: #c42d40;
+  animation: flash 1.5s infinite reverse;
+}
+@keyframes flash {
+  0% {
+    color: #c42d40;
+  }
+  100% {
+    color: red;
+  }
 }
 .section1 .section1-div h1 span:nth-child(3), .section1 .section1-div .h1 span:nth-child(3) {
   font-size: 4vw;
@@ -10941,19 +10953,26 @@ header .second-nav-part li a:hover {
 }
 .section1 .section1-div button {
   border-radius: 50px;
-  width: 10vw;
-  height: 6vh;
+  width: 13vw;
+  height: 7vh;
+}
+.section1 .section1-div button a {
+  text-decoration: none;
+  color: black;
 }
 .section1 .section1-div .section1-btn2 {
   position: absolute;
-  left: 50%;
-  font-size: 1vw;
+  left: 55%;
+  font-size: 1.5vw;
   bottom: 4vh;
+}
+.section1 .section1-div .section1-btn2 a {
+  color: white;
 }
 .section1 .section1-div .section1-btn1 {
   position: absolute;
-  left: 28%;
-  font-size: 1vw;
+  left: 20%;
+  font-size: 1.5vw;
   bottom: 4vh;
 }
 
@@ -10964,58 +10983,96 @@ header .second-nav-part li a:hover {
     position: relative;
     z-index: -1;
   }
-  .section1 .hero-img {
-    background-image: url(../../public/images/banner1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(0.2);
-    width: 100%;
-    height: 100%;
-  }
   .section1 .section1-div {
     width: 50%;
-    height: 50%;
+    height: 60%;
+    position: relative;
+  }
+  .section1 .section1-div h1, .section1 .section1-div .h1 {
+    font-size: x-large;
+    position: absolute;
+    top: 20%;
+  }
+  .section1 .section1-div h1 span:nth-child(1), .section1 .section1-div .h1 span:nth-child(1) {
+    font-size: xx-large;
+    text-transform: uppercase;
+  }
+  .section1 .section1-div h1 span:nth-child(2), .section1 .section1-div .h1 span:nth-child(2) {
+    font-size: xx-large;
+    text-transform: uppercase;
+    color: #c42d40;
+  }
+  .section1 .section1-div h1 span:nth-child(3), .section1 .section1-div .h1 span:nth-child(3) {
+    font-size: x-large;
+  }
+  .section1 .section1-div h1 span:nth-child(4), .section1 .section1-div .h1 span:nth-child(4) {
+    font-size: xx-large;
+  }
+  .section1 .section1-div button {
+    border-radius: 50px;
+    width: 20vw;
+    height: 8vh;
+  }
+  .section1 .section1-div .section1-btn2 {
+    left: 50%;
+    top: 75%;
+    bottom: 2vh;
+    font-size: 2vw;
+  }
+  .section1 .section1-div .section1-btn1 {
+    left: 8%;
+    top: 75%;
+    bottom: 2vh;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 426px) {
+  .section1 .section1-div {
+    width: 100%;
+    height: 80%;
     position: relative;
   }
   .section1 .section1-div h1, .section1 .section1-div .h1 {
     font-family: courgette;
     text-align: center;
-    font-size: 4vw;
+    font-size: x-large;
     position: absolute;
-    top: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
   }
   .section1 .section1-div h1 span:nth-child(1), .section1 .section1-div .h1 span:nth-child(1) {
-    font-size: 5vw;
+    font-size: xx-large;
     text-transform: uppercase;
   }
   .section1 .section1-div h1 span:nth-child(2), .section1 .section1-div .h1 span:nth-child(2) {
-    font-size: 6vw;
+    font-size: xx-large;
     text-transform: uppercase;
     color: #c42d40;
   }
   .section1 .section1-div h1 span:nth-child(3), .section1 .section1-div .h1 span:nth-child(3) {
-    font-size: 5vw;
+    font-size: x-large;
   }
   .section1 .section1-div h1 span:nth-child(4), .section1 .section1-div .h1 span:nth-child(4) {
-    font-size: 6vw;
+    font-size: xx-large;
   }
   .section1 .section1-div button {
     border-radius: 50px;
-    width: 20vw;
-    height: 6vh;
-  }
-  .section1 .section1-div .section1-btn2 {
-    position: absolute;
-    left: 50%;
-    bottom: 2vh;
-    font-size: 2vw;
+    width: 80vw;
+    height: 8vh;
   }
   .section1 .section1-div .section1-btn1 {
     position: absolute;
-    left: 8%;
+    left: 10%;
+    top: 75%;
     bottom: 2vh;
-    font-size: 2vw;
+    font-size: 5vw;
+  }
+  .section1 .section1-div .section1-btn2 {
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    bottom: 2vh;
+    font-size: 5vw;
   }
 }
 
