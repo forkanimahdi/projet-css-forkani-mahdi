@@ -1,9 +1,14 @@
 *
     margin: 0
     padding: 0
-nav
+header
+    position: absolute
+    width: 100%
     height: 16vh
-    background-color: purple
+    .mobilemenu
+        display: none
+        background-color: transparent
+    // first nav links
     .first-nav-part
         width: 35%
         height: 40%
@@ -24,13 +29,14 @@ nav
                 justify-content: center
                 font-weight: 500
             a:hover
-                background-color: red
-
+                background-color: $red
+    // Logo
     .logo
         a
             img
-                width: 4.5vw
+                width: 4vw
                 margin-bottom: 2vh
+    // second nav link
     .second-nav-part
         width: 35%
         height: 40%
@@ -51,4 +57,99 @@ nav
                 width: 100%
                 height: 100%
             a:hover
-                background-color: red
+                background-color: $red
+// Tablet VERSION
+@media screen and (min-width: 426px) and (max-width: 1023px)
+    header
+        margin-top: 0
+        // logo
+        .logo
+            position: absolute
+            top: 2%
+            left: 50%
+            transform: translate(-50%)
+        // first nav + second nav links
+        .first-nav-part
+            width: 50%
+            position: absolute
+            top: 50%
+            li
+                a
+                    font-size: 1.5vw
+        .second-nav-part
+            width: 50%
+            position: absolute
+            top: 50%
+            left: 50%
+            li
+                a
+                    font-size: 1.5vw
+// Mobile VERSION
+@media (max-width: 426px)
+    header
+        height: 10vh
+        margin-top: 0
+        // mobile menu
+        .mobilemenu
+            display: initial
+        #mobileMenu
+            width: 8vw
+            height: 8vh
+            position: fixed
+            left: 5%
+            top: 1%
+            appearance: none
+            z-index: 1
+        #mobileMenu:checked +.fa-bars +.first-nav-part
+            left: 0
+        #mobileMenu:checked +.fa-bars +.first-nav-part + .logo +.second-nav-part
+            left: 0
+        .fa-bars
+            color: white
+            font-size: 7vw
+            position: fixed
+            left: 5%
+            top: 3%
+
+        // logo
+        .logo
+            position: absolute
+            top: 2%
+            left: 50%
+            transform: translate(-50%)
+            img
+                width: 8vw !important
+        // first nav + second nav links
+        .first-nav-part
+            width: 100%
+            height: 35vh
+            position: fixed
+            top: 10vh
+            left: -100vw
+            border-top: 1px solid white
+            border-bottom: none
+            flex-direction: column
+            background-color: #423b3b96
+            transition: 1s
+            li
+                width: 100%
+                border-bottom: 1px solid $red
+                a
+                    font-size: 3vw
+        .second-nav-part
+            width: 100%
+            height: 35vh
+            position: fixed
+            top: 44vh
+            left: -100vw
+            border-top: none
+            border-bottom: 1px solid white
+            flex-direction: column
+            background-color: #423b3b96
+            transition: 1s
+
+            li
+                width: 100%
+                border-bottom: 1px solid $red
+                a
+                    font-size: 3vw
