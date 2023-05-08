@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @font-face {
-  font-family: ampezar;
-  src: url(../../public/fonts/amperzand.ttf);
+  font-family: courgette;
+  src: url(../../public/fonts/Courgette.ttf);
 }
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -10897,6 +10897,125 @@ header .second-nav-part li a:hover {
   }
   header .second-nav-part li a {
     font-size: 3vw;
+  }
+}
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+.section1 .hero-img {
+  background-image: url(../../public/images/banner1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.2);
+  width: 100%;
+  height: 100%;
+}
+.section1 .section1-div {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.section1 .section1-div h1, .section1 .section1-div .h1 {
+  font-family: courgette;
+  text-align: center;
+  font-size: 3vw;
+}
+.section1 .section1-div h1 span:nth-child(1), .section1 .section1-div .h1 span:nth-child(1) {
+  font-size: 5vw;
+  text-transform: uppercase;
+}
+.section1 .section1-div h1 span:nth-child(2), .section1 .section1-div .h1 span:nth-child(2) {
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: #c42d40;
+}
+.section1 .section1-div h1 span:nth-child(3), .section1 .section1-div .h1 span:nth-child(3) {
+  font-size: 4vw;
+}
+.section1 .section1-div h1 span:nth-child(4), .section1 .section1-div .h1 span:nth-child(4) {
+  font-size: 5vw;
+}
+.section1 .section1-div button {
+  border-radius: 50px;
+  width: 10vw;
+  height: 6vh;
+}
+.section1 .section1-div .section1-btn2 {
+  position: absolute;
+  left: 50%;
+  font-size: 1vw;
+  bottom: 4vh;
+}
+.section1 .section1-div .section1-btn1 {
+  position: absolute;
+  left: 28%;
+  font-size: 1vw;
+  bottom: 4vh;
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+  .section1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+  }
+  .section1 .hero-img {
+    background-image: url(../../public/images/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.2);
+    width: 100%;
+    height: 100%;
+  }
+  .section1 .section1-div {
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+  .section1 .section1-div h1, .section1 .section1-div .h1 {
+    font-family: courgette;
+    text-align: center;
+    font-size: 4vw;
+    position: absolute;
+    top: 10%;
+  }
+  .section1 .section1-div h1 span:nth-child(1), .section1 .section1-div .h1 span:nth-child(1) {
+    font-size: 5vw;
+    text-transform: uppercase;
+  }
+  .section1 .section1-div h1 span:nth-child(2), .section1 .section1-div .h1 span:nth-child(2) {
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #c42d40;
+  }
+  .section1 .section1-div h1 span:nth-child(3), .section1 .section1-div .h1 span:nth-child(3) {
+    font-size: 5vw;
+  }
+  .section1 .section1-div h1 span:nth-child(4), .section1 .section1-div .h1 span:nth-child(4) {
+    font-size: 6vw;
+  }
+  .section1 .section1-div button {
+    border-radius: 50px;
+    width: 20vw;
+    height: 6vh;
+  }
+  .section1 .section1-div .section1-btn2 {
+    position: absolute;
+    left: 50%;
+    bottom: 2vh;
+    font-size: 2vw;
+  }
+  .section1 .section1-div .section1-btn1 {
+    position: absolute;
+    left: 8%;
+    bottom: 2vh;
+    font-size: 2vw;
   }
 }
 
