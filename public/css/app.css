@@ -10867,6 +10867,7 @@ header .second-nav-part li a:hover {
     width: 100%;
     height: 44vh;
     position: fixed;
+    z-index: 1000;
     top: 11vh;
     left: -200vw;
     border-top: 1px solid white;
@@ -10886,6 +10887,7 @@ header .second-nav-part li a:hover {
     width: 100%;
     height: 44vh;
     position: fixed;
+    z-index: 1000;
     top: 55vh;
     right: -200vw;
     border-top: none;
@@ -11081,6 +11083,13 @@ header .second-nav-part li a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 50%;
+}
+.section4 .booking input {
+  width: 15vw;
+}
+.section4 .booking select {
+  width: 15vw;
 }
 
 @media (min-width: 426px) and (max-width: 1023px) {
@@ -11199,6 +11208,29 @@ header .second-nav-part li a:hover {
     color: #c42d40;
     background-color: #cccccc;
     font-size: 16px;
+  }
+  .section4 {
+    background-image: url(../../public/images/main_bg.jpg);
+    height: auto;
+  }
+  .section4 h1, .section4 .h1 {
+    font-family: courgette;
+  }
+  .section4 span {
+    color: #c42d40;
+  }
+  .section4 .booking {
+    background-image: url(../images/book_table_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+  }
+  .section4 .booking input {
+    width: 100%;
+  }
+  .section4 .booking select {
+    width: 100%;
   }
 }
 @media (max-width: 426px) {
@@ -11326,6 +11358,31 @@ header .second-nav-part li a:hover {
     background-color: #cccccc;
     font-size: 16px;
     margin-right: 3vw;
+  }
+  .section4 {
+    background-image: url(../../public/images/main_bg.jpg);
+    height: auto;
+  }
+  .section4 h1, .section4 .h1 {
+    font-family: courgette;
+    margin-top: 5vh;
+  }
+  .section4 span {
+    color: #c42d40;
+  }
+  .section4 .booking {
+    margin-top: 5vh !important;
+    background-image: url(../images/book_table_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .section4 .booking input {
+    width: 100%;
+  }
+  .section4 .booking select {
+    width: 100%;
   }
 }
 
