@@ -11107,6 +11107,17 @@ header .second-nav-part li a:hover {
   color: #c42d40;
 }
 
+.section6 {
+  background-image: url(../../public/images/main_bg.jpg);
+  height: 80vh;
+}
+.section6 h1, .section6 .h1 {
+  font-family: courgette;
+}
+.section6 span {
+  color: #c42d40;
+}
+
 @media (min-width: 426px) and (max-width: 1023px) {
   .section1 {
     width: 100vw;
@@ -11246,6 +11257,9 @@ header .second-nav-part li a:hover {
   }
   .section4 .booking select {
     width: 100%;
+  }
+  .section6 .container {
+    width: 40% !important;
   }
 }
 @media (max-width: 426px) {
@@ -11399,9 +11413,15 @@ header .second-nav-part li a:hover {
   .section4 .booking select {
     width: 100%;
   }
+  .section4 .decor {
+    display: none;
+  }
   .section5 .sect5-text {
     width: 100% !important;
     margin-top: 5vh !important;
+  }
+  .section6 .container {
+    width: 60% !important;
   }
 }
 

@@ -129,6 +129,7 @@
         font-family: courgette
         span
             color: $red
+// section 4
 .section4
     background-image: url(../../public/images/main_bg.jpg)
     h1
@@ -145,6 +146,7 @@
             width: 15vw
         select
             width: 15vw
+// section 5        
 .section5
     background-image: url(../../public/images/testimonials_background.jpg)
     height: auto
@@ -153,6 +155,14 @@
     background-repeat: no-repeat
     background-blend-mode: darken
     background-color: rgba(0,0,0,0.5 )
+    h1
+        font-family: courgette
+    span
+        color: $red
+// section 6
+.section6
+    background-image: url(../../public/images/main_bg.jpg)
+    height: 80vh
     h1
         font-family: courgette
     span
@@ -272,6 +282,9 @@
                 width: 100%
             select
                 width: 100%
+    .section6
+        .container
+            width: 40% !important
 // Mobile VERSION
 @media (max-width: 426px)
     .section1
@@ -397,8 +410,13 @@
                 width: 100%
             select
                 width: 100%
+    .section4
+        .decor
+            display: none
     .section5
         .sect5-text
             width: 100% !important
             margin-top: 5vh !important
-
+    .section6
+        .container
+            width: 60% !important
