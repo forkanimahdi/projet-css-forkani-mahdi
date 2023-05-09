@@ -11070,7 +11070,6 @@ header .second-nav-part li a:hover {
 
 .section4 {
   background-image: url(../../public/images/main_bg.jpg);
-  height: 180vh;
 }
 .section4 h1, .section4 .h1 {
   font-family: courgette;
@@ -11090,6 +11089,22 @@ header .second-nav-part li a:hover {
 }
 .section4 .booking select {
   width: 15vw;
+}
+
+.section5 {
+  background-image: url(../../public/images/testimonials_background.jpg);
+  height: auto;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.section5 h1, .section5 .h1 {
+  font-family: courgette;
+}
+.section5 span {
+  color: #c42d40;
 }
 
 @media (min-width: 426px) and (max-width: 1023px) {
@@ -11383,6 +11398,10 @@ header .second-nav-part li a:hover {
   }
   .section4 .booking select {
     width: 100%;
+  }
+  .section5 .sect5-text {
+    width: 100% !important;
+    margin-top: 5vh !important;
   }
 }
 

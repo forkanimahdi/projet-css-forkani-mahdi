@@ -131,7 +131,6 @@
             color: $red
 .section4
     background-image: url(../../public/images/main_bg.jpg)
-    height: 180vh
     h1
         font-family: courgette
     span
@@ -146,6 +145,18 @@
             width: 15vw
         select
             width: 15vw
+.section5
+    background-image: url(../../public/images/testimonials_background.jpg)
+    height: auto
+    background-position: right
+    background-size: cover
+    background-repeat: no-repeat
+    background-blend-mode: darken
+    background-color: rgba(0,0,0,0.5 )
+    h1
+        font-family: courgette
+    span
+        color: $red
 
 // Tablet Version
 @media (min-width: 426px) and (max-width: 1023px)
@@ -386,3 +397,8 @@
                 width: 100%
             select
                 width: 100%
+    .section5
+        .sect5-text
+            width: 100% !important
+            margin-top: 5vh !important
+
