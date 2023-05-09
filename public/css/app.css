@@ -10835,7 +10835,7 @@ header .second-nav-part li a:hover {
   header #mobileMenu {
     width: 8vw;
     height: 8vh;
-    position: fixed;
+    position: absolute;
     left: 5%;
     top: 1%;
     appearance: none;
@@ -10850,9 +10850,9 @@ header .second-nav-part li a:hover {
   header .fa-bars {
     color: white;
     font-size: 7vw;
-    position: fixed;
+    position: absolute;
     left: 5%;
-    top: 3%;
+    top: 15%;
   }
   header .logo {
     position: absolute;
@@ -10903,7 +10903,6 @@ header .second-nav-part li a:hover {
   }
 }
 .section1 {
-  width: 100vw;
   height: 100vh;
   position: relative;
   z-index: -1;
@@ -10975,6 +10974,80 @@ header .second-nav-part li a:hover {
   font-size: 1.5vw;
   bottom: 4vh;
 }
+.section1 .section1-border {
+  background-image: url(../../public/images/bottom_decoration_img.png);
+  width: 100%;
+  height: 2vh;
+  position: absolute;
+  bottom: 0;
+}
+
+.section2 {
+  background-image: url(../../public/images/main_bg.jpg);
+  height: 180vh;
+}
+.section2 .container {
+  height: 90%;
+  border: 2px solid black;
+}
+.section2 .container h1, .section2 .container .h1 {
+  font-family: courgette;
+}
+.section2 .container h1 span, .section2 .container .h1 span {
+  color: #c42d40;
+  font-size: 3.5vw;
+}
+.section2 .container p {
+  width: 50%;
+}
+.section2 .container .line-deco {
+  background-image: url(../../public/images/decoration_line.png);
+  width: 50%;
+  height: 2vh;
+}
+.section2 .container .nav-tabs-elements .element {
+  font-family: courgette;
+  font-size: 3vw;
+  color: #cccccc;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-radius: 0;
+  background-color: white;
+}
+.section2 .container .nav-tabs-elements .active {
+  background-color: white !important;
+  border-right: 5px solid #c42d40;
+}
+.section2 .container .nav-tabs-elements .active i {
+  color: #c42d40;
+}
+.section2 .container .nav-tabs-elements .active h5, .section2 .container .nav-tabs-elements .active .h5 {
+  color: black !important;
+}
+.section2 .container .nav-tabs-elements .menu-table {
+  width: 100%;
+  height: fit-content;
+}
+.section2 .container .nav-tabs-elements .menu-table .col-6 {
+  width: 48%;
+  height: 20vh;
+  border-bottom: 1px solid #cccccc;
+}
+.section2 .container .nav-tabs-elements .menu-table .col-6 img {
+  border-radius: 50%;
+  width: 15%;
+}
+.section2 .container .nav-tabs-elements .menu-table .col-6 .col-text {
+  font-size: 1vw;
+}
+.section2 .container .nav-tabs-elements .menu-table .col-6 .col-text p {
+  width: 100%;
+}
+.section2 .container .nav-tabs-elements .menu-table .col-6 .price {
+  width: 15%;
+  color: #c42d40;
+  background-color: #cccccc;
+}
 
 @media (min-width: 426px) and (max-width: 1023px) {
   .section1 {
@@ -11025,6 +11098,74 @@ header .second-nav-part li a:hover {
     bottom: 2vh;
     font-size: 2vw;
   }
+  .section2 {
+    background-image: url(../../public/images/main_bg.jpg);
+    height: 180vh;
+  }
+  .section2 .container {
+    height: 90%;
+    border: 2px solid black;
+  }
+  .section2 .container h1, .section2 .container .h1 {
+    font-family: courgette;
+  }
+  .section2 .container h1 span, .section2 .container .h1 span {
+    color: #c42d40;
+    font-size: 3.5vw;
+  }
+  .section2 .container p {
+    width: 80%;
+  }
+  .section2 .container .line-deco {
+    background-image: url(../../public/images/decoration_line.png);
+    width: 50%;
+    height: 2vh;
+  }
+  .section2 .container .nav-tabs-elements .element {
+    font-family: courgette;
+    font-size: 3vw;
+    color: #cccccc;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 0;
+    background-color: white;
+    width: 20vw;
+  }
+  .section2 .container .nav-tabs-elements .active {
+    background-color: white !important;
+    border-right: 5px solid #c42d40;
+  }
+  .section2 .container .nav-tabs-elements .active i {
+    color: #c42d40;
+  }
+  .section2 .container .nav-tabs-elements .active h5, .section2 .container .nav-tabs-elements .active .h5 {
+    color: black !important;
+  }
+  .section2 .container .nav-tabs-elements .menu-table {
+    width: 100%;
+    height: fit-content;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 {
+    width: 44%;
+    height: 15vh;
+    border-bottom: 1px solid #cccccc;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 h3, .section2 .container .nav-tabs-elements .menu-table .col-6 .h3 {
+    font-size: 13px;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 img {
+    border-radius: 50%;
+    width: 15%;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 .col-text {
+    font-size: 10px;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 .price {
+    width: 25%;
+    color: #c42d40;
+    background-color: #cccccc;
+    font-size: 16px;
+  }
 }
 @media (max-width: 426px) {
   .section1 .section1-div {
@@ -11073,6 +11214,84 @@ header .second-nav-part li a:hover {
     top: 90%;
     bottom: 2vh;
     font-size: 5vw;
+  }
+  .section2 {
+    background-image: url(../../public/images/main_bg.jpg);
+    height: 280vh;
+  }
+  .section2 .container {
+    height: 90%;
+    border: 2px solid black;
+  }
+  .section2 .container h1, .section2 .container .h1 {
+    font-family: courgette;
+  }
+  .section2 .container h1 span, .section2 .container .h1 span {
+    color: #c42d40;
+    font-size: 3.5vw;
+  }
+  .section2 .container p {
+    width: 100%;
+    margin-top: 9vh !important;
+  }
+  .section2 .container .line-deco {
+    background-image: url(../../public/images/decoration_line.png);
+    width: 50%;
+    height: 2vh;
+  }
+  .section2 .container .nav-tabs-elements .element {
+    font-family: courgette;
+    font-size: 6vw;
+    color: #cccccc;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 0;
+    background-color: white;
+    width: 20vw;
+    margin-bottom: 5vh !important;
+  }
+  .section2 .container .nav-tabs-elements .element h6, .section2 .container .nav-tabs-elements .element .h6 {
+    font-size: 3vw !important;
+  }
+  .section2 .container .nav-tabs-elements .active {
+    background-color: white !important;
+    border-right: 5px solid #c42d40;
+  }
+  .section2 .container .nav-tabs-elements .active i {
+    color: #c42d40;
+  }
+  .section2 .container .nav-tabs-elements .active h5, .section2 .container .nav-tabs-elements .active .h5 {
+    color: black !important;
+  }
+  .section2 .container .nav-tabs-elements .menu-table {
+    width: 100%;
+    height: fit-content;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 {
+    width: 100%;
+    height: 15vh;
+    border-bottom: 1px solid #cccccc;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 h3, .section2 .container .nav-tabs-elements .menu-table .col-6 .h3 {
+    font-size: 13px;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 p {
+    margin-top: 0 !important;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 img {
+    border-radius: 50%;
+    width: 15%;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 .col-text {
+    width: 50%;
+    font-size: 10px;
+  }
+  .section2 .container .nav-tabs-elements .menu-table .col-6 .price {
+    width: 10%;
+    color: #c42d40;
+    background-color: #cccccc;
+    font-size: 16px;
+    margin-right: 3vw;
   }
 }
 
