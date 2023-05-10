@@ -11424,5 +11424,14 @@ header .second-nav-part li a:hover {
     width: 60% !important;
   }
 }
+footer {
+  background-image: url(../../public/images/footer_background.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 /*# sourceMappingURL=app.css.map */
